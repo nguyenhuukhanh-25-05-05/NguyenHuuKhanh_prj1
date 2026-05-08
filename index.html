@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaleHub - Fashion & Clothing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Public/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-2 py-lg-3 border-bottom">
+        <div class="container-fluid px-3 px-lg-5 position-relative">
+
+            <a class="navbar-brand d-none d-lg-block m-0 position-absolute top-50 start-50 translate-middle" href="#">
+                <img src="Public/images/logo_350x.png" alt="SaleHub" height="32">
+            </a>
+
+            <a class="navbar-brand d-lg-none me-0" href="#">
+                <img src="Public/images/logo_350x.png" alt="SaleHub" height="24">
+            </a>
+
+
+            <div class="d-flex flex-grow-1 mx-2 d-lg-none">
+                <div class="position-relative w-100">
+                    <input type="text" class="form-control rounded-pill border-0 shadow-none"
+                        placeholder="What are you looking for ?"
+                        style="background-color: #f4f5f7; font-size: 0.85rem; padding: 12px 20px;">
+                    <i class="bi bi-search position-absolute end-0 top-50 translate-middle-y me-3 fw-bold text-dark"
+                        style="font-size: 1.1rem;"></i>
+                </div>
+            </div>
+
+            <button class="navbar-toggler border-0 p-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2 mt-3 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link fw-medium px-2" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium px-2" href="#">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium px-2" href="#">Women</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium px-2" href="#">Men</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium px-2" href="#">Blog</a></li>
+
+                    <li class="nav-item d-lg-none border-top pt-2 mt-2"><a class="nav-link fw-medium px-2"
+                            href="#">Account</a></li>
+                    <li class="nav-item d-lg-none"><a class="nav-link fw-medium px-2" href="#">My Cart (0)</a></li>
+                </ul>
+            </div>
+
+
+            <div class="d-none d-lg-flex align-items-center ms-auto gap-3">
+                <a href="#" class="nav-link p-0 text-dark d-flex align-items-center small fw-medium">
+                    <i class="bi bi-search fs-5 me-2"></i> Search
+                </a>
+                <a href="#" class="nav-link p-0 text-dark small fw-medium">Account</a>
+                <a href="#" class="nav-link p-0 text-dark position-relative d-flex align-items-center small fw-medium">
+                    <i class="bi bi-bag fs-5 me-2"></i> My Cart
+                    <span class="ms-1 px-1 bg-warning rounded-circle text-dark fw-bold"
+                        style="font-size: 0.7rem; min-width: 18px; height: 18px; display: inline-flex; align-items: center; justify-content: center;">0</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <div class="position-relative">
+        <div class="position-absolute top-0 start-0 w-100" style="height: 3px; background-color: #c4a484; z-index: 10;">
+        </div>
+
+        <header id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active position-relative" style="height: 90vh; background-color: #000;">
+
+                    <div class="d-none d-md-block w-100 h-100 position-absolute top-0 start-0"
+                        style="background: url('Public/images/slideshow-1_f9506a0f-cd22-46e1-89e6-dfb216eda48b_1920x950.jpg') center/cover; z-index: 0;">
+                        <div class="container h-100 d-flex align-items-center">
+                            <div class="text-white hero-content">
+                                <h6 class="text-uppercase fw-bold mb-3 ls-2" style="font-size: 0.9rem;">NEW COLLECTION
+                                </h6>
+                                <h1 class="fw-bold mb-4 ls-neg-2 lh-1" style="font-size: clamp(3rem, 12vw, 8rem);">FIND
+                                    YOUR
+                                    <br> <span class="display-1 fw-bold">PERFECT</span>
+                                </h1>
+                                <p class="mb-5 opacity-100 fs-6 fw-light">Uncompromising in style, quality and
+                                    performance</p>
+                                <a href="#"
+                                    class="btn rounded-0 fw-bold text-uppercase fs-6 border-0 shadow-sm btn-view-more btn-add-to-bag"
+                                    style="letter-spacing: 1px; min-width: 250px; background-color: #fff; color: #111; transition: all 0.3s ease;">Shop
+                                    the collection<span class="arrow-icon"><i class="bi bi-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-md-none w-100 h-100 position-absolute top-0 start-0"
+                        style="background: url('Public/images/bn-is_4_193x142_crop_center.png') center/cover; z-index: 0;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100"
+                            style="background: linear-gradient(to right, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 100%); z-index: 1;">
+                        </div>
+                        <div class="container h-100 d-flex align-items-center position-relative" style="z-index: 2;">
+                            <div class="text-white" style="max-width: 95%;">
+                                <h6 class="text-uppercase fw-bold mb-2"
+                                    style="font-size: 0.85rem; letter-spacing: 1px; text-shadow: 1px 1px 2px rgba(0,0,0,0.4);">
+                                    NEW COLLECTION</h6>
+                                <h1 class="fw-bold mb-3 lh-1"
+                                    style="font-size: 4rem; letter-spacing: -1px; text-shadow: 1px 1px 4px rgba(0,0,0,0.5);">
+                                    FASHION<br>GLASSES</h1>
+                                <p class="mb-4 fw-normal text-white"
+                                    style="font-size: 1.1rem; line-height: 1.5; text-shadow: 1px 1px 2px rgba(0,0,0,0.4);">
+                                    Best eyeglasses for women to channel your inner Clark Kent</p>
+                                <a href="#"
+                                    class="btn px-4 py-3 rounded-0 fw-bold text-uppercase border-0 shadow-sm btn-view-more btn-add-to-bag"
+                                    style="font-size: 0.85rem; letter-spacing: 0.5px; background-color: #fff; color: #111; transition: all 0.3s ease;">SHOP
+                                    THE COLLECTION<span class="arrow-icon"><i class="bi bi-arrow-right"></i></span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Denim Collection -->
+    <section class="py-5 mt-5">
+        <div class="container text-center mb-5">
+            <h2 class="fw-bold text-uppercase">Denim Collection</h2>
+            <p class="text-muted mx-auto" style="max-width: 600px;">Explore the best trends for girls and women at
+                SaleHub! Clothes, shoes and cool accessories for a new season are available now at SaleHub online.</p>
+        </div>
+        <div class="container-fluid px-lg-5">
+            <div class="row g-4">
+                <div class="col-md-7">
+                    <div class="card border-0 rounded-0 overflow-hidden position-relative group" style="height: 100%;">
+                        <img src="Public/images/banner_1_1728x.png"
+                            class="img-fluid w-100 h-100 object-fit-cover transition-transform" alt="Denim Jacket">
+                        <div class="position-absolute bottom-0 start-0 p-4 w-100 text-center text-white pb-5">
+                            <h2 class="text-uppercase fw-bold mb-1 fs-1">DENIM-JACKET</h2>
+                            <p class="small mb-4 opacity-100">14 Denim-Jacket Outfits to Live in Now That It Is Fall</p>
+                            <a href="#"
+                                class="btn btn-white bg-white text-dark rounded-0 fw-bold text-uppercase fs-6 border-0 shadow-sm btn-view-more btn-add-to-bag"
+                                style="letter-spacing: 1px;">Shop the collection<span class="arrow-icon"><i
+                                        class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex flex-column gap-4">
+                    <div class="card border-0 rounded-0 overflow-hidden position-relative group flex-grow-1">
+                        <img src="Public/images/bn-2_676a7adf-ea7b-4fa1-8848-8517abdc2793_900x.jpg"
+                            class="img-fluid w-100 h-100 object-fit-cover transition-transform" alt="Denim Mini Skirt">
+                        <div class="position-absolute bottom-0 start-0 p-4 w-100 text-center text-white pb-5">
+                            <h4 class="text-uppercase fw-bold mb-3">DENIM MINI SKIRT</h4>
+                            <a href="#"
+                                class="btn btn-white bg-white text-dark rounded-0 fw-bold text-uppercase fs-6 border-0 shadow-sm btn-view-more btn-add-to-bag"
+                                style="letter-spacing: 1px;">Shop the collection<span class="arrow-icon"><i
+                                        class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                    <div class="card border-0 rounded-0 overflow-hidden position-relative group flex-grow-1">
+                        <img src="Public/images/banner_3_900x.png"
+                            class="img-fluid w-100 h-100 object-fit-cover transition-transform" alt="Hooded Denim">
+                        <div class="position-absolute bottom-0 start-0 p-4 w-100 text-center text-white pb-5">
+                            <h4 class="text-uppercase fw-bold mb-1">HOODED DENIM</h4>
+                            <p class="small mb-4 opacity-100">Subtitle from happy customers</p>
+                            <a href="#"
+                                class="btn btn-white bg-white text-dark rounded-0 fw-bold text-uppercase fs-6 border-0 shadow-sm btn-view-more btn-add-to-bag"
+                                style="letter-spacing: 1px;">Shop the collection<span class="arrow-icon"><i
+                                        class="bi bi-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <!-- Desktop Header -->
+        <div class="container text-center mb-5 d-none d-md-block">
+            <h2 class="fw-bold text-uppercase">We Love <i class="bi bi-heart-fill text-dark small"></i></h2>
+        </div>
+
+        <!-- Mobile Header with Arrows -->
+        <div class="container d-flex justify-content-between align-items-center mb-4 d-md-none">
+            <button
+                class="btn btn-white bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center border-0"
+                style="width: 45px; height: 45px;">
+                <i class="bi bi-chevron-left text-dark"></i>
+            </button>
+            <h2 class="fw-bold text-uppercase mb-0 m-0 fs-3">WE LOVE <i class="bi bi-heart-fill text-dark fs-5"></i>
+            </h2>
+            <button
+                class="btn btn-white bg-white rounded-circle shadow-sm d-flex align-items-center justify-content-center border-0"
+                style="width: 45px; height: 45px;">
+                <i class="bi bi-chevron-right text-dark"></i>
+            </button>
+        </div>
+
+        <div class="container position-relative">
+
+            <!-- Desktop Left Arrow -->
+            <button
+                class="btn btn-white bg-white rounded-circle position-absolute top-50 start-0 translate-middle-y shadow-sm d-none d-md-flex align-items-center justify-content-center"
+                style="width: 45px; height: 45px; z-index: 10; margin-left: -15px;">
+                <i class="bi bi-chevron-left fs-5"></i>
+            </button>
+
+            <div
+                class="row flex-wrap flex-md-nowrap row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 g-md-4 overflow-auto pb-4 hide-scrollbar px-1">
+
+                <div class="col order-1">
+                    <div class="card border-0 rounded-0">
+                        <img src="Public/images/1_35559729-bb4f-477a-afbb-d695451b9719_540x.jpg"
+                            class="card-img-top rounded-0" alt="Product">
+                        <div class="card-body px-0 text-start">
+                            <h6 class="fw-bold mb-2" style="font-size: 0.9rem;">Eco Aware organic cotton top</h6>
+                            <div class="text-dark small mb-2">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-half"></i>
+                            </div>
+                            <p class="fw-bold mb-0" style="font-size: 0.9rem;">$39.00</p>
+                            <div class="d-flex align-items-center gap-1 mt-3">
+                                <div class="rounded-circle border border-dark p-1 d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/3_8577e617-d687-43a4-bd96-d1950e73ecaf_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <div class="rounded-circle d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/5_bcff670c-87f8-47c7-a8f5-7aa2b3e8b472_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <div class="rounded-circle d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/5_f262bbb4-ddec-4217-8446-2ac307e0ad96_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <span class="text-muted ms-1" style="font-size: 0.75rem;">+ 3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col order-3 order-md-2">
+                    <div class="card border-0 rounded-0">
+                        <img src="Public/images/1_bc70b428-ba01-434a-87f7-7fc276929722_540x.jpg"
+                            class="card-img-top rounded-0" alt="Product">
+                        <div class="card-body px-0 text-start">
+                            <h6 class="fw-bold mb-2" style="font-size: 0.9rem;">Eco aware long sleeve blouse</h6>
+                            <div class="text-dark small mb-2">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-half"></i>
+                            </div>
+                            <p class="fw-bold mb-0" style="font-size: 0.9rem;">$47.00</p>
+                            <div class="d-flex align-items-center gap-1 mt-3">
+                                <div class="rounded-circle border border-dark p-1 d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/4_134c3653-e3f1-4c43-8367-086c066c1762_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <div class="rounded-circle d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/1_5cb5d1e1-2c31-499b-9010-ccac2fecf49e_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <div class="rounded-circle d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/6_bcd1a33d-2c02-407b-a5a5-6c1b3e43199b_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <span class="text-muted ms-1" style="font-size: 0.75rem;">+ 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col order-2 order-md-3">
+                    <div class="card border-0 rounded-0">
+                        <img src="Public/images/5_225b97d3-5005-45cf-b46e-3d7d6ea50d47_720x.jpg"
+                            class="card-img-top rounded-0" alt="Product">
+                        <div class="card-body px-0 text-start">
+                            <h6 class="fw-bold mb-2" style="font-size: 0.9rem;">Oversized jacket with denim panels</h6>
+                            <div class="text-dark small mb-2">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i>
+                            </div>
+                            <p class="fw-bold mb-0" style="font-size: 0.9rem;">$33.00</p>
+                            <div class="d-flex align-items-center gap-1 mt-3">
+                                <div class="rounded-circle border border-dark p-1 d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/1_e35958cd-3f41-4262-85ab-017f8a776679_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <div class="rounded-circle d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/1_d698b06f-6999-4580-ac7e-b27317b686f4_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <div class="rounded-circle d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/6_357432d4-bdfd-446f-aaff-fd28dbba3109_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col order-4">
+                    <div class="card border-0 rounded-0">
+                        <img src="Public/images/1_c0df3076-19c1-4535-a664-270cf6e05ab5_720x.jpg"
+                            class="card-img-top rounded-0" alt="Product">
+                        <div class="card-body px-0 text-start">
+                            <h6 class="fw-bold mb-2" style="font-size: 0.9rem;">Levi's essential western denim shirt
+                            </h6>
+                            <div class="text-dark small mb-2">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-half"></i>
+                            </div>
+                            <p class="fw-bold mb-0" style="font-size: 0.9rem;">$115.00</p>
+                            <div class="d-flex align-items-center gap-1 mt-3">
+                                <div class="rounded-circle border border-dark p-1 d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/4_134c3653-e3f1-4c43-8367-086c066c1762_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <div class="rounded-circle d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/6_bcd1a33d-2c02-407b-a5a5-6c1b3e43199b_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <div class="rounded-circle d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/7_7d379fe4-a861-4ff4-a474-15b70e999b6a_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <span class="text-muted ms-1" style="font-size: 0.75rem;">+ 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col order-5 d-none d-md-block">
+                    <div class="card border-0 rounded-0">
+                        <img src="Public/images/1_8624266d-ffc8-44db-b030-5f62c62138d5_540x.jpg"
+                            class="card-img-top rounded-0" alt="Product">
+                        <div class="card-body px-0 text-start">
+                            <h6 class="fw-bold mb-2" style="font-size: 0.9rem;">Faux suede biker jacket</h6>
+                            <div class="text-dark small mb-2">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                    class="bi bi-star"></i>
+                            </div>
+                            <p class="fw-bold mb-0" style="font-size: 0.9rem;">$60.00</p>
+                            <div class="d-flex align-items-center gap-1 mt-3">
+                                <div class="rounded-circle border border-dark p-1 d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/9_50x50.jpg" class="rounded-circle"
+                                        style="width: 16px; height: 16px; object-fit: cover;" alt="color">
+                                </div>
+                                <div class="rounded-circle d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/4_134c3653-e3f1-4c43-8367-086c066c1762_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                                <div class="rounded-circle d-inline-flex justify-content-center align-items-center"
+                                    style="width: 24px; height: 24px;">
+                                    <img src="Public/images/6_357432d4-bdfd-446f-aaff-fd28dbba3109_50x50.jpg"
+                                        class="rounded-circle" style="width: 16px; height: 16px; object-fit: cover;"
+                                        alt="color">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <button
+                class="btn btn-white bg-white rounded-circle position-absolute top-50 end-0 translate-middle-y shadow-sm d-none d-md-flex align-items-center justify-content-center"
+                style="width: 45px; height: 45px; z-index: 10; margin-right: -15px;">
+                <i class="bi bi-chevron-right fs-5"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Autumn Banner -->
+    <section class="position-relative overflow-hidden py-5 d-flex align-items-center" style="min-height: 600px;">
+        <video autoplay loop muted playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+            style="z-index: -2;">
+            <source src="Public/images/video.mp4" type="video/mp4">
+        </video>
+
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-25" style="z-index: -1;"></div>
+
+        <div class="container text-center text-white position-relative" style="z-index: 1;">
+            <h6 class="text-uppercase fw-bold mb-3" style="letter-spacing: 2px; font-size: 0.85rem;">New Arrivals</h6>
+            <h2 class="fw-bold mb-3" style="font-size: clamp(2.5rem, 6vw, 4.5rem);">Autumn is Coming</h2>
+            <p class="mb-4" style="font-size: 1.1rem;">The 11 Biggest Autumn/Winter 2021 Trends</p>
+
+            <div class="mx-auto bg-white mb-4" style="width: 50px; height: 2px;"></div>
+
+            <p class="mb-1 text-uppercase fw-bold" style="letter-spacing: 2px; font-size: 0.85rem;">By Vinovatheme</p>
+            <p class="text-uppercase opacity-75 mb-5" style="letter-spacing: 2px; font-size: 0.8rem;">11 November 2021
+            </p>
+
+            <a href="#"
+                class="btn btn-white bg-white text-dark px-5 py-3 rounded-0 fw-bold text-uppercase fs-6 border-0 shadow-sm btn-view-more"
+                style="letter-spacing: 1px;">View More<span class="arrow-icon"><i
+                        class="bi bi-arrow-right"></i></span></a>
+        </div>
+    </section>
+
+    <!-- Featured Product -->
+    <section class="pt-5 mt-5 pb-5 mb-5 py-lg-5 px-0 my-lg-5">
+        <div class="container text-center mb-5 mt-md-0 mt-4">
+            <h2 class="fw-bold text-uppercase" style="letter-spacing: 1px;">Featured Product</h2>
+        </div>
+        <div class="container">
+            <div class="row gy-5 gx-md-5">
+                <div class="col-md-6 px-4 px-md-3">
+                    <div class="position-relative">
+                        <img src="Public/images/1_c0df3076-19c1-4535-a664-270cf6e05ab5_720x.jpg"
+                            class="img-fluid w-100 bg-light" alt="Levi's essential western denim shirt"
+                            style="object-fit: cover;">
+
+                        <div class="d-flex justify-content-center gap-2 mt-4">
+                            <div class="rounded-circle bg-dark" style="width: 8px; height: 8px;"></div>
+                            <div class="rounded-circle bg-secondary opacity-25" style="width: 8px; height: 8px;"></div>
+                            <div class="rounded-circle bg-secondary opacity-25" style="width: 8px; height: 8px;"></div>
+                            <div class="rounded-circle bg-secondary opacity-25" style="width: 8px; height: 8px;"></div>
+                            <div class="rounded-circle bg-secondary opacity-25" style="width: 8px; height: 8px;"></div>
+                            <div class="rounded-circle bg-secondary opacity-25" style="width: 8px; height: 8px;"></div>
+                            <div class="rounded-circle bg-secondary opacity-25" style="width: 8px; height: 8px;"></div>
+                            <div class="rounded-circle bg-secondary opacity-25" style="width: 8px; height: 8px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ps-md-5 px-4 px-md-3">
+                    <h5 class="fw-bold mb-3">Levi's essential western denim shirt</h5>
+                    <div class="text-dark mb-3" style="font-size: 0.9rem;">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                            class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    </div>
+                    <p class="fw-bold fs-6 mb-4">$120.00</p>
+
+                    <div class="mb-4 mt-5">
+                        <p class="fw-bold mb-2" style="font-size: 0.75rem; letter-spacing: 1px;">COLOR: <span
+                                class="fw-normal">DARKOLIVEGREEN</span></p>
+                        <div class="d-flex gap-2 mt-3">
+
+                            <div class="rounded-circle border border-dark p-1 d-flex align-items-center justify-content-center"
+                                style="width: 28px; height: 28px;">
+                                <div class="rounded-circle w-100 h-100" style="background-color: #556b2f;"></div>
+                            </div>
+                            <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 28px; height: 28px;">
+                                <div class="rounded-circle" style="background-color: #000; width: 22px; height: 22px;">
+                                </div>
+                            </div>
+                            <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 28px; height: 28px;">
+                                <div class="rounded-circle"
+                                    style="background-color: #cd5c5c; width: 22px; height: 22px;"></div>
+                            </div>
+                            <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 28px; height: 28px;">
+                                <div class="rounded-circle border"
+                                    style="background-color: #fff; width: 22px; height: 22px;"></div>
+                            </div>
+                            <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 28px; height: 28px;">
+                                <div class="rounded-circle"
+                                    style="background-color: #483d8b; width: 22px; height: 22px;"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4 mt-4">
+                        <p class="fw-bold mb-2" style="font-size: 0.75rem; letter-spacing: 1px;">SIZE: <span
+                                class="fw-normal">XS</span></p>
+                        <div class="d-flex gap-2 align-items-center mt-3">
+                            <div class="bg-dark text-white fw-bold d-flex align-items-center justify-content-center"
+                                style="width: 35px; height: 35px; font-size: 0.75rem;">XS</div>
+                            <div class="border text-dark fw-bold d-flex align-items-center justify-content-center"
+                                style="width: 35px; height: 35px; font-size: 0.75rem;">S</div>
+                            <div class="border text-muted d-flex align-items-center justify-content-center position-relative opacity-50"
+                                style="width: 45px; height: 35px; font-size: 0.75rem;">
+                                M <i class="bi bi-envelope-fill ms-1" style="font-size: 0.6rem;"></i>
+                            </div>
+                            <div class="border text-dark fw-bold d-flex align-items-center justify-content-center"
+                                style="width: 35px; height: 35px; font-size: 0.75rem;">L</div>
+                            <div class="border text-muted d-flex align-items-center justify-content-center position-relative opacity-50"
+                                style="width: 45px; height: 35px; font-size: 0.75rem;">
+                                XL <i class="bi bi-envelope-fill ms-1" style="font-size: 0.6rem;"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column gap-2 mb-4 mt-4 w-100">
+                        <button
+                            class="btn rounded-0 py-3 fw-bold text-uppercase w-100 border-0 btn-view-more btn-add-to-bag"
+                            style="font-size: 0.85rem; letter-spacing: 1px;">Add to
+                            Bag<span class="arrow-icon"><i class="bi bi-arrow-right"></i></span></button>
+                        <button
+                            class="btn rounded-0 py-2 w-100 border-0 d-flex align-items-center justify-content-center"
+                            style="background-color: #ffc439;">
+                            <span class="text-dark" style="font-size: 0.95rem;">Pay with</span> <img
+                                src="Public/images/paypal_PNG9.png" height="50" class="ms-1" alt="PayPal"
+                                style="object-fit: contain;">
+                        </button>
+                    </div>
+
+                    <div class="mb-4 mt-4">
+                        <a href="#" class="text-dark fw-bold text-decoration-none d-inline-flex align-items-center"
+                            style="font-size: 0.65rem; letter-spacing: 1px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                                class="me-2" viewBox="0 0 24 24">
+                                <rect x="2" y="8" width="20" height="8" rx="2" ry="2"></rect>
+                                <line x1="6" y1="8" x2="6" y2="11"></line>
+                                <line x1="10" y1="8" x2="10" y2="11"></line>
+                                <line x1="14" y1="8" x2="14" y2="11"></line>
+                                <line x1="18" y1="8" x2="18" y2="11"></line>
+                            </svg>
+                            SIZE CHART
+                        </a>
+                    </div>
+
+                    <div class="text-muted mt-5" style="font-size: 0.8rem; line-height: 1.8;">
+                        <p class="mb-4">Steele's Lena Dress features a smocked bust, off the shoulder sleeves with
+                            eyelet design, and mini cut skirt with raw hem.</p>
+                        <ul class="list-unstyled d-flex flex-column gap-2 text-uppercase"
+                            style="font-size: 0.7rem; letter-spacing: 0.5px;">
+                            <li class="d-flex align-items-start"><i class="bi bi-circle-fill text-dark me-3 mt-1"
+                                    style="font-size: 0.3rem;"></i> <span>MACHINE WASH AT MAX.TEMP. 30° C - NORMAL
+                                    PROCESS</span></li>
+                            <li class="d-flex align-items-start"><i class="bi bi-circle-fill text-dark me-3 mt-1"
+                                    style="font-size: 0.3rem;"></i> <span>DO NOT BLEACH</span></li>
+                            <li class="d-flex align-items-start"><i class="bi bi-circle-fill text-dark me-3 mt-1"
+                                    style="font-size: 0.3rem;"></i> <span>DO NOT TUMBLE DRY</span></li>
+                            <li class="d-flex align-items-start"><i class="bi bi-circle-fill text-dark me-3 mt-1"
+                                    style="font-size: 0.3rem;"></i> <span>IRON AT MAX. TEMP. OF 110° C WITHOUT
+                                    STEAM</span></li>
+                            <li class="d-flex align-items-start"><i class="bi bi-circle-fill text-dark me-3 mt-1"
+                                    style="font-size: 0.3rem;"></i> <span>DO NOT DRY CLEAN</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="d-block d-lg-none" style="height: 60px;"></div>
+        </div>
+    </section>
+
+    <!-- Shop the Looks -->
+    <section class="py-5 px-4" style="background-color: #f5f2ec;">
+        <div class="container text-center mb-5 mt-sm-5">
+            <h2 class="fw-bold text-uppercase ">Shop The Looks</h2>
+            <p class="text-muted mx-auto" style="max-width: 700px;">Our latest endeavour features designs from around
+                the world with materials so comfortable you won't want to wear anything else every again.</p>
+        </div>
+        <div class="container-fluid px-0 mb-3">
+            <div class="row g-0">
+                <div class="col-12 col-md-6 col-lg-3"><img
+                        src="Public/images/lb-1_88ecbdcc-c1c6-47af-9cb5-1f21ebae7c4c_720x.png"
+                        class="img-fluid w-100 h-100 object-fit-cover" alt="Look"></div>
+                <div class="col-12 col-md-6 col-lg-3"><img src="Public/images/blog-2_900x.png"
+                        class="img-fluid w-100 h-100 object-fit-cover" alt="Look"></div>
+                <div class="col-12 col-md-6 col-lg-3"><img
+                        src="Public/images/lb-3_243a2a47-8869-47c2-a1b7-ea9163d96e52_720x.png"
+                        class="img-fluid w-100 h-100 object-fit-cover" alt="Look"></div>
+                <div class="col-12 col-md-6 col-lg-3"><img
+                        src="Public/images/lb-4_d1d516ae-775a-453a-a97b-84c9e80f69cd_720x.png"
+                        class="img-fluid w-100 h-100 object-fit-cover" alt="Look"></div>
+                <div class="col-12 col-md-6 col-lg-3"><img
+                        src="Public/images/lb-5_fbd8fa3f-d8a8-4ef1-a023-c348c802ad38_720x.png"
+                        class="img-fluid w-100 h-100 object-fit-cover" alt="Look"></div>
+                <div class="col-12 col-md-6 col-lg-3"><img
+                        src="Public/images/lb-6_a88c6dc9-2f7b-4020-96b1-f01cd6593323_720x.png"
+                        class="img-fluid w-100 h-100 object-fit-cover" alt="Look"></div>
+                <div class="col-12 col-md-6 col-lg-3"><img
+                        src="Public/images/lb-7_177acd91-0dbb-4e63-8fe7-2311d1c193e8_720x.png"
+                        class="img-fluid w-100 h-100 object-fit-cover" alt="Look"></div>
+                <div class="col-12 col-md-6 col-lg-3"><img src="Public/images/img-12-1_1920x1920.jpg"
+                        class="img-fluid w-100 h-100 object-fit-cover" alt="Look"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="py-5">
+        <div class="container text-center mb-5 mt-xxl-5">
+            <h2 class="fw-bold text-uppercase" style="letter-spacing: 1px;">From Our Blog</h2>
+        </div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card border-0 rounded-0 bg-transparent">
+                        <img src="Public/images/blog-1_900x.png" class="card-img-top rounded-0" alt="Blog">
+                        <div class="bg-white position-relative ms-auto"
+                            style="margin-top: -60px; width: 88%; padding: 25px 15px 0 25px; z-index: 2;">
+                            <h6 class="fw-bold mb-3" style="line-height: 1.5;">5 Sweet Outfit Ideas You'll Wear Well
+                                Beyond Valentine's Day</h6>
+                            <p class="text-muted" style="font-size: 0.8rem; line-height: 1.6;">Valentine's Day 2021 has
+                                no choice but to unfold rather differently than usual, so we already know it will be one
+                                to remember. ...</p>
+
+                            <div class="bg-dark mt-4 mb-4" style="width: 35px; height: 1.5px;"></div>
+
+                            <div class="d-flex align-items-center flex-wrap gap-4">
+                                <div class="d-flex align-items-center text-dark fw-bold"
+                                    style="font-size: 0.65rem; letter-spacing: 0.5px;">
+                                    <i class="bi bi-person me-2 fs-6"></i> BY VINOVATHEME
+                                </div>
+                                <div class="d-flex align-items-center text-muted"
+                                    style="font-size: 0.65rem; letter-spacing: 0.5px;">
+                                    <i class="bi bi-calendar3 me-2 fs-6 opacity-75"></i> 03 MAR 2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-none d-md-block">
+                    <div class="card border-0 rounded-0 bg-transparent">
+                        <img src="Public/images/blog-2_900x.png" class="card-img-top rounded-0" alt="Blog">
+                        <div class="bg-white position-relative ms-auto"
+                            style="margin-top: -60px; width: 88%; padding: 25px 15px 0 25px; z-index: 2;">
+                            <h6 class="fw-bold mb-3" style="line-height: 1.5;">How To Be "Good With Money" According To
+                                4 Female Financial Experts</h6>
+                            <p class="text-muted" style="font-size: 0.8rem; line-height: 1.6;">Valentine's Day 2021 has
+                                no choice but to unfold rather differently than usual, so we already know it will be one
+                                to remember. ...</p>
+
+                            <div class="bg-dark mt-4 mb-4" style="width: 35px; height: 1.5px;"></div>
+
+                            <div class="d-flex align-items-center flex-wrap gap-4">
+                                <div class="d-flex align-items-center text-dark fw-bold"
+                                    style="font-size: 0.65rem; letter-spacing: 0.5px;">
+                                    <i class="bi bi-person me-2 fs-6"></i> BY VINOVATHEME
+                                </div>
+                                <div class="d-flex align-items-center text-muted"
+                                    style="font-size: 0.65rem; letter-spacing: 0.5px;">
+                                    <i class="bi bi-calendar3 me-2 fs-6 opacity-75"></i> 03 MAR 2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-none d-md-block">
+                    <div class="card border-0 rounded-0 bg-transparent">
+                        <img src="Public/images/blog-3_900x.png" class="card-img-top rounded-0" alt="Blog">
+                        <div class="bg-white position-relative ms-auto"
+                            style="margin-top: -60px; width: 88%; padding: 25px 15px 0 25px; z-index: 2;">
+                            <h6 class="fw-bold mb-3" style="line-height: 1.5;">This Scandi Influencer's Shoe
+                                Collaboration Is The Gift That Keeps On Giving</h6>
+                            <p class="text-muted" style="font-size: 0.8rem; line-height: 1.6;">Valentine's Day 2021 has
+                                no choice but to unfold rather differently than usual, so we already know it will be one
+                                to remember. ...</p>
+
+                            <div class="bg-dark mt-4 mb-4" style="width: 35px; height: 1.5px;"></div>
+
+                            <div class="d-flex align-items-center flex-wrap gap-4">
+                                <div class="d-flex align-items-center text-dark fw-bold"
+                                    style="font-size: 0.65rem; letter-spacing: 0.5px;">
+                                    <i class="bi bi-person me-2 fs-6"></i> BY VINOVATHEME
+                                </div>
+                                <div class="d-flex align-items-center text-muted"
+                                    style="font-size: 0.65rem; letter-spacing: 0.5px;">
+                                    <i class="bi bi-calendar3 me-2 fs-6 opacity-75"></i> 03 MAR 2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-none d-md-block">
+                    <div class="card border-0 rounded-0 bg-transparent">
+                        <img src="Public/images/blog-4_900x.png" class="card-img-top rounded-0" alt="Blog">
+                        <div class="bg-white position-relative ms-auto"
+                            style="margin-top: -60px; width: 88%; padding: 25px 15px 0 25px; z-index: 2;">
+                            <h6 class="fw-bold mb-3" style="line-height: 1.5;">5 Sweet Outfit Ideas You'll Wear Well
+                                Beyond Valentine's Day</h6>
+                            <p class="text-muted" style="font-size: 0.8rem; line-height: 1.6;">Valentine's Day 2021 has
+                                no choice but to unfold rather differently than usual, so we already know it will be one
+                                to remember. ...</p>
+
+                            <div class="bg-dark mt-4 mb-4" style="width: 35px; height: 1.5px;"></div>
+
+                            <div class="d-flex align-items-center flex-wrap gap-4">
+                                <div class="d-flex align-items-center text-dark fw-bold"
+                                    style="font-size: 0.65rem; letter-spacing: 0.5px;">
+                                    <i class="bi bi-person me-2 fs-6"></i> BY VINOVATHEME
+                                </div>
+                                <div class="d-flex align-items-center text-muted"
+                                    style="font-size: 0.65rem; letter-spacing: 0.5px;">
+                                    <i class="bi bi-calendar3 me-2 fs-6 opacity-75"></i> 03 MAR 2021
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-5 border-top border-bottom">
+        <div class="container px-4 px-md-3">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center">
+                        <i class="bi bi-truck me-3 text-dark" style="font-size: 2.5rem; line-height: 1;"></i>
+                        <div class="text-start">
+                            <p class="mb-0 text-muted" style="font-size: 0.8rem; line-height: 1.6;">
+                                <span class="text-dark fw-bold text-uppercase">Free Shipping</span> on all US order or
+                                order above $99
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mt-3 mt-md-0">
+                        <i class="bi bi-telephone-outbound me-3 text-dark"
+                            style="font-size: 2.5rem; line-height: 1;"></i>
+                        <div class="text-start">
+                            <p class="mb-0 text-muted" style="font-size: 0.8rem; line-height: 1.6;">
+                                <span class="text-dark fw-bold text-uppercase">Support 24/7 :</span> Contact us 24 hours
+                                a day, 7 days a week
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex align-items-center mt-3 mt-md-0">
+                        <i class="bi bi-arrow-left-right me-3 text-dark" style="font-size: 2.5rem; line-height: 1;"></i>
+                        <div class="text-start">
+                            <p class="mb-0 text-muted" style="font-size: 0.8rem; line-height: 1.6;">
+                                <span class="text-dark fw-bold text-uppercase">30 Days Return :</span> Simply return it
+                                within 30 days for an exchange.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5" style="background-color: #f5f2ec;">
+        <div class="container px-4 px-md-3 mt-4">
+            <div class="row g-5">
+                <div class="col-lg-3">
+                    <img src="Public/images/logo_350x.png" alt="SaleHub" height="22" class="mb-4">
+                    <p class="text-muted mb-2" style="font-size: 0.85rem; letter-spacing: 0.5px;">We're available by
+                        phone +123-456-789</p>
+                    <p class="text-muted mb-2" style="font-size: 0.85rem; letter-spacing: 0.5px;">info@example.com</p>
+                    <p class="text-muted mb-4" style="font-size: 0.85rem; letter-spacing: 0.5px;">Monday till Friday 10
+                        to 6 EST</p>
+
+
+                    <div class="d-flex gap-2 mt-4">
+                        <img src="Public/images/paypal_415b5ae4-daaf-4b21-9943-accf6f6bdb42_240x.png" width="220px"
+                            height="30px">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0 ps-lg-5">
+                    <h6 class="fw-bold mb-4" style="font-size: 1rem;">About Us</h6>
+                    <ul class="list-unstyled text-muted" style="font-size: 0.85rem; letter-spacing: 0.5px;">
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">About
+                                Us</a></li>
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">Contact
+                                us</a></li>
+                        <li class="mb-3"><a href="#"
+                                class="text-muted text-decoration-none footer-link-hover">Factories</a></li>
+                        <li class="mb-3"><a href="#"
+                                class="text-muted text-decoration-none footer-link-hover">Careers</a></li>
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">Help and
+                                advice</a></li>
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">Shipping
+                                & Returns</a></li>
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">Terms and
+                                conditions</a>
+                        </li>
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">Refund
+                                Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0">
+                    <h6 class="fw-bold mb-4" style="font-size: 1rem;">Our Shop</h6>
+                    <ul class="list-unstyled text-muted" style="font-size: 0.85rem; letter-spacing: 0.5px;">
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">New
+                                Arrivals</a></li>
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">Top
+                                Trending</a></li>
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">Autumn
+                                Collection</a></li>
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">Back in
+                                Stock</a></li>
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">Bikini
+                                Tops</a></li>
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">Bikini
+                                Bottoms</a></li>
+                        <li class="mb-3"><a href="#"
+                                class="text-muted text-decoration-none footer-link-hover">Swimwear</a></li>
+                        <li class="mb-3"><a href="#" class="text-muted text-decoration-none footer-link-hover">Denim
+                                Collection</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-4 mt-lg-0">
+                    <h6 class="fw-bold mb-4" style="font-size: 1rem;">Newsletter</h6>
+                    <p class="text-muted mb-4" style="font-size: 0.85rem; letter-spacing: 0.5px; line-height: 1.6;">
+                        Receive our weekly newsletter.<br>For dietary content, fashion insider and the best offers.</p>
+                    <div class="input-group mb-4">
+                        <input type="text" class="form-control rounded-0 bg-white" placeholder="Email address"
+                            style="border-color: #dee2e6; font-size: 0.85rem; padding: 10px 15px;">
+                        <button class="btn btn-dark rounded-0 px-4 btn-view-more" type="button"
+                            style="font-size: 0.85rem;">Join<span class="arrow-icon"><i
+                                    class="bi bi-arrow-right"></i></span></button>
+                    </div>
+
+
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-dark"><i class="bi bi-facebook" style="font-size: 1rem;"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-twitter" style="font-size: 1rem;"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-pinterest" style="font-size: 1rem;"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-vimeo" style="font-size: 1rem;"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-instagram" style="font-size: 1rem;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Footer Bottom -->
+    <div style="border-top: 2px solid white; background-color: #f5f2ec;">
+        <div class="container px-4 px-md-3 py-3">
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <p class="text-muted mb-0" style="font-size: 0.8rem; letter-spacing: 0.5px;">Copyright © 2021
+                        Vinovathemes. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center justify-content-md-end align-items-center flex-wrap">
+                    <span class="text-dark fw-bold me-3 d-none d-md-inline" style="font-size: 0.8rem;">USD <i
+                            class="bi bi-caret-down-fill ms-1" style="font-size: 0.6rem;"></i></span>
+                    <span class="text-muted mx-2" style="font-size: 0.8rem;">|</span>
+                    <a href="#" class="text-muted text-decoration-none mx-2" style="font-size: 0.8rem;">Privacy
+                        Policy</a>
+                    <span class="text-muted mx-2" style="font-size: 0.8rem;">|</span>
+                    <a href="#" class="text-muted text-decoration-none mx-2" style="font-size: 0.8rem;">Terms of Use</a>
+                    <span class="text-muted mx-2" style="font-size: 0.8rem;">|</span>
+                    <a href="#" class="text-muted text-decoration-none ms-2" style="font-size: 0.8rem;">FAQs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+# Ignore Mockups (chứa file ảnh quá lớn)
+Mockups/
+
+# Windows junk
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS X junk
+.DS_Store
